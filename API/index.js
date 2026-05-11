@@ -1,7 +1,11 @@
 import express from "express";
+import magic from "./magic.js";
 
 const app=express();
 app.use(express.json());
+
+//Routes
+app.use(magic);
 
 app.get("/hello",(req,res)=>{
     try {
