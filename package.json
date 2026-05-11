@@ -3,5 +3,22 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14"
-  }
+  },
+  "name": "api_baigorria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminBaigorria/API_DevOps_TP.git"
+  },
+  "author": "benjamin baigorria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminBaigorria/API_DevOps_TP/issues"
+  },
+  "homepage": "https://github.com/BenjaminBaigorria/API_DevOps_TP#readme",
+  "description": ""
 }
