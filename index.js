@@ -1,5 +1,5 @@
-import app from "./API/index.js";
-import dotenv from "dotenv"
+const app = require("./API/index.js");
+const dotenv = require("dotenv")
 
 dotenv.config();
 
