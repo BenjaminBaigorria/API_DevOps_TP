@@ -19,7 +19,7 @@ route.get("/magic/cards",(req,res)=>{
 })
 route.get("/magic/card/:id",(req,res)=>{
     try {
-        const id = 10;
+        const {id}= req.params;
         fetch(`https://api.magicthegathering.io/v1/cards/${id}`)
         .then(response => response.json())
         .then(data =>{
