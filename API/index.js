@@ -1,5 +1,5 @@
-import express from "express";
-import magic from "./magic.js";
+const express= require("express");
+const magic = require("./magic.js");
 
 const app=express();
 app.use(express.json());
@@ -17,4 +17,4 @@ app.get("/hello",(req,res)=>{
     
 })
 
-export default app;
+module.exports=app;
