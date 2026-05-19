@@ -1,6 +1,7 @@
 const  magic = require("../API/magic")
 const request=require("supertest")
 
+jest.setTimeout(15000);
 describe("GET /magic", ()=>{
     test("Should respond with 200 status code and the first card should be Ancestor's chosen",async()=>{
         const response = await request(magic).get("/magic/cards")

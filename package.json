@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
