@@ -32,7 +32,7 @@ route.get("/magic/card/:id",(req,res)=>{
     
 })
 
-route.get("/magic/card/:name",(req,res)=>{
+route.get("/magic/cardname/:name",(req,res)=>{
     try {
         const {name}= req.params;
         fetch(`https://api.magicthegathering.io/v1/cards?name=${name}`)
