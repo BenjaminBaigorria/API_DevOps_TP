@@ -13,7 +13,7 @@ route.get("/magic/cards",(req,res)=>{
             res.status(200).send(data);
         })
     } catch (error) {
-        res.status(400).send("Something is wrong");
+        res.status(400).send("It was not possible to bring the cards");
     }
     
 })
@@ -27,7 +27,7 @@ route.get("/magic/card/:id",(req,res)=>{
             res.status(200).send(data);
         })
     } catch (error) {
-        res.status(400).send("Something is wrong");
+        res.status(400).send("It was not possible to bring the selected card");
     }
     
 })
@@ -42,7 +42,7 @@ route.get("/magic/cardname/:name",(req,res)=>{
             res.status(200).send(data);
         })
     } catch (error) {
-        res.status(400).send("Something is wrong");
+        res.status(400).send("It was not possible to bring the selected card by name");
     }
 })
 
