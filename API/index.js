@@ -7,6 +7,16 @@ app.use(express.json());
 //Routes
 app.use(magic);
 
+app.get("/",(req,res)=>{
+    try {
+        res.set("Content-Type","text/plain");
+        res.status(200).send("API funcionando, puedes probar los endpoints: \n/hello\n/magic/cards\n/magic/card/:id\n/magic/cardname/:name");
+    } catch (error) {
+        res.status(400).send("Something is wrong");
+    }
+    
+})
+
 app.get("/hello",(req,res)=>{
     try {
         res.set("Content-Type","text/plain");
@@ -16,5 +26,7 @@ app.get("/hello",(req,res)=>{
     }
     
 })
+
+
 
 module.exports=app;

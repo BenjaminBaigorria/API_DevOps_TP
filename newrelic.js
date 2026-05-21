@@ -7,5 +7,8 @@ exports.config = {
   logging: {
     level: 'info',
   },
+  distributed_tracing: {
+    enabled: true
+  }
 
 };
