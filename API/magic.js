@@ -6,7 +6,7 @@ route.use(express.json());
 route.get("/magic/cards",(req,res)=>{
     try {
 
-        fetch("https://api.magicthegathering.io/v1/cards")
+        fetch("https://api.magicthegathering.io/v1/cards/130550")
         .then(response => response.json())
         .then(data =>{
             res.set("Content-Type","application/json");
