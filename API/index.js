@@ -27,9 +27,7 @@ app.get("/hello",(req,res)=>{
     
 })
 app.get("/error", (req, res) => {
-    res.status(500).json({
-        error: "Fallo intencional"
-    });
+    throw new Error("Error de prueba para New Relic");
 });
 
 
