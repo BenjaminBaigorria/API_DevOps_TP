@@ -41,3 +41,6 @@ jobs:
 
     - name: Push Docker image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/api-devops:latest
+    
+    - name: Render Deploy
+      run: curl ${{secrets.RENDER_DEPLOY_HOOK}}
