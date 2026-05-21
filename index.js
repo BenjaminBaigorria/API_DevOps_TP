@@ -1,3 +1,4 @@
+require('newrelic');
 const app = require("./API/index.js");
 const dotenv = require("dotenv")
 
